@@ -1,10 +1,10 @@
 import ClassRoom from './0-classroom.js';
 
 function initializeRooms() {
-  const arr = [
-    new ClassRoom(19),
-    new ClassRoom(20),
-    new ClassRoom(34)
-  ];
+  const one = new ClassRoom(19);
+  const two = new ClassRoom(20);
+  const three = new ClassRoom(34);
+  const arr = [one, two, three];
+
   return arr;
 }
