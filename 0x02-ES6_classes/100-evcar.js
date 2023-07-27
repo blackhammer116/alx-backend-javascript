@@ -9,7 +9,7 @@ export default class EVCar extends Car {
   }
 
   [clonedCarSymbol]() {
-    const { _brand, _motor, _color} = this;
+    const { _brand, _motor, _color } = this;
     return new Car(_brand, _motor, _color);
   }
 
