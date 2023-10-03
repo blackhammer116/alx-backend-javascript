@@ -1,4 +1,4 @@
-module.exports = function getListStudents() {
+/*module.exports = function getListStudents() {
 
 	const obj = new Set();
 
@@ -14,4 +14,11 @@ module.exports = function getListStudents() {
 	arr.push(obj2.next().value);
 
 	return arr;
+}*/
+module.exports = function getListStudents() {
+  return [
+    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisco' }
+  ];
 }
