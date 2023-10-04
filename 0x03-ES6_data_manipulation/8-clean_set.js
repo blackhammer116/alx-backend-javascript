@@ -6,9 +6,9 @@ module.exports = function cleanSet(set, startString) {
   for (const value of set) {
     if (value.startsWith(startString)) {
       const cleanedValue = value.slice(startString.length);
-      result += cleanedValue + '-';
+      result = result.concat('-',cleanedValue);
     }
   }
-  result = result.slice(0, -1);
+  result = result.slice(1);
   return result;
 };
